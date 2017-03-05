@@ -68,6 +68,8 @@
   <ItemGroup>
     <Content Include="app\app.js" />
     <Content Include="app\drills\drillListCtrl.js" />
+    <Content Include="app\drills\drillListView.html" />
+    <Content Include="app\welcomeView.html" />
     <Content Include="common\services\common.services.js" />
     <Content Include="common\services\drillResource.js" />
     <Content Include="css\app.css" />
@@ -76,8 +78,10 @@
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="images\logo.png" />
     <Content Include="js\angular-mocks.js" />
     <Content Include="js\angular-resource.js" />
+    <Content Include="js\angular-ui-router.js" />
     <Content Include="js\angular.js" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\jquery-3.1.1.js" />
@@ -106,7 +110,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\logEntries\" />
-    <Folder Include="images\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
