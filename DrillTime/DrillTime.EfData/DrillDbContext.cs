@@ -14,6 +14,7 @@ namespace DrillTime.EfData
         public DrillDbContext()
             : base("name=DrillDbContext")
         {
+            Configuration.ProxyCreationEnabled = false;
         }
 
         public virtual DbSet<Drill> Drills { get; set; }
@@ -28,5 +29,9 @@ namespace DrillTime.EfData
             //    .WithOptional(e => e.LogEntry2)
             //    .HasForeignKey(e => e.PreviousLogIdForDrill);
         }
+
+      
+
+
     }
 }

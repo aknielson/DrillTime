@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>Drill Time</title>
+    <meta charset="utf-8" />
+
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/angular.js"></script>
+    <script src="js/angular-resource.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/drills/drillListCtrl.js"></script>
+    <script src="common/services/common.services.js"></script>
+    <script src="common/services/drillResource.js"></script>
+</head>
+<body ng-app="drillTimeNgOnly">
+
+    <div class="panel panel-primary">
+        <div class="panel-heading" style="font-size:large">Drill List</div>
+        <div class="panel-body">
+            <table class="table"  ng-controller="DrillListCtrl as vm">
+                <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Start Position</td>
+                        <td>
+                            <button class="btn btn-danger" ng-click="vm.toggleProcedure()">{{vm.showProcedure ? "Hide" : "Show"}} Procedure</button>
+                        </td>
+                        <td>Suggested TimeSpan</td>
+                        <td>Suggested Reps</td>
+                        <td>Target Par</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="drill in vm.Drills">
+                        <td>{{drill.Name}}</td>
+                        <td>{{drill.StartPosition}}</td>
+                        <td>
+                            <div ng-show="vm.showProcedure">
+                                {{drill.Procedure}}
+                            </div>
+                        </td>
+                        <td>{{drill.SuggestedTimeSpan}}</td>
+                        <td>{{drill.SuggestedReps}}</td>
+                        <td>{{drill.TargetPar}}</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
