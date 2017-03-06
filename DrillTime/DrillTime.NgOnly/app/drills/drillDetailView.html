@@ -1,0 +1,57 @@
+﻿<div class="panel panel-primary">
+    <div class="panel-heading" style="font-size:large">
+        {{vm.title}}
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="{{vm.drill.DrillImage}}" alt="" />
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-3">Name:</div>
+                    <div class="col-md-6">{{vm.drill.Name}}</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">Start Position:</div>
+                    <div class="col-md-6">{{vm.drill.StartPosition }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">Procedure:</div>
+                    <div class="col-md-6">{{vm.drill.Procedure }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">Suggested Time Span:</div>
+                    <div class="col-md-6">{{vm.drill.SuggestedTimeSpan | number:0 }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">Suggested Reps:</div>
+                    <div class="col-md-6">{{vm.drill.SuggestedReps | number:0 }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">Target Par:</div>
+                    <div class="col-md-6">{{ vm.drill.TargetPar }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">Tags:</div>
+                    <div class="col-md-6">{{ vm.drill.tagList }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel-footer">
+        <a class="btn btn-default"
+           ui-sref="drillList"
+           style="width:80px">
+            <I class="glyphicon glyphicon-chevron-left"></I>
+            Back
+        </a>
+        <a class="btn btn-primary"
+           ui-sref="drillEdit.info({drillId: vm.drill.Id})"
+           style="width:80px;margin-left:10px">
+            Edit
+        </a>
+    </div>
+
+  
+</div>

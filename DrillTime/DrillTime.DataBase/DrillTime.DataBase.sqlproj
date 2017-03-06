@@ -71,6 +71,7 @@
   <ItemGroup>
     <None Include="PostDeployment\PopulateDrills.sql" />
     <None Include="Local.DrillTime.DataBase.publish.xml" />
+    <None Include="PostDeployment\PopulateLogEntry.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DrillTime.DataBase.refactorlog" />

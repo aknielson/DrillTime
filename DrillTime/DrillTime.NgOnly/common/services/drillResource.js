@@ -6,7 +6,7 @@
         .factory("drillResource", ["$resource", drillResource]);
 
     function drillResource($resource) {
-        return $resource("http://localhost:12441/api/drills");
+        return $resource("http://localhost:12441/api/drills/:drillId");
     }
 
 

@@ -12,13 +12,23 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
-    
+
+
 
     <script src="js/angular-resource.js"></script>
+
+
     <script src="app/app.js"></script>
-    <script src="app/drills/drillListCtrl.js"></script>
+
+
     <script src="common/services/common.services.js"></script>
     <script src="common/services/drillResource.js"></script>
+
+
+
+    <script src="app/drills/drillListCtrl.js"></script>
+    <script src="app/drills/drillDetailCtrl.js"></script>
+    <script src="app/drills/drillEditCtrl.js"></script>
 </head>
 <body ng-app="drillTimeNgOnly">
     <nav class="navbar navbar-default ">
@@ -40,7 +50,7 @@
                 <ul class="nav navbar-nav">
                     <li><a ui-sref="drillList">Drill List</a></li>
                     <li>
-                        <a ui-sref="drillEdit({drillId:0})">
+                        <a ui-sref="drillEdit.info({drillId:0})">
                             <i class="glyphicon glyphicon-plus"></i>
                             Add Drill
                         </a>

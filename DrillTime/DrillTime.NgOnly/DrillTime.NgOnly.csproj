@@ -67,6 +67,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.js" />
+    <Content Include="app\drills\drillDetailCtrl.js" />
+    <Content Include="app\drills\drillDetailView.html" />
+    <Content Include="app\drills\drillEditCtrl.js" />
+    <Content Include="app\drills\drillEditImageView.html" />
+    <Content Include="app\drills\drillEditInfoView.html" />
+    <Content Include="app\drills\drillEditTagsView.html" />
+    <Content Include="app\drills\drillEditView.html" />
     <Content Include="app\drills\drillListCtrl.js" />
     <Content Include="app\drills\drillListView.html" />
     <Content Include="app\welcomeView.html" />

@@ -16,7 +16,11 @@
             </thead>
             <tbody>
                 <tr ng-repeat="drill in vm.Drills">
-                    <td>{{drill.Name}}</td>
+                    <td>
+                        <a ui-sref="drillDetail({drillId:drill.Id})">
+                            {{drill.Name}}
+                        </a>
+                    </td>
                     <td>{{drill.StartPosition}}</td>
                     <td>
                         <div ng-show="vm.showProcedure">
@@ -26,7 +30,9 @@
                     <td>{{drill.SuggestedTimeSpan}}</td>
                     <td>{{drill.SuggestedReps}}</td>
                     <td>{{drill.TargetPar}}</td>
-
+                    <td>
+                        <a class="btn btn-primary" ui-sref="drillEdit.info({drillId: drill.Id})">Edit</a>
+                    </td>
                 </tr>
             </tbody>
         </table>

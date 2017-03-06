@@ -10,3 +10,4 @@ Post-Deployment Script Template
 --------------------------------------------------------------------------------------
 */
 :r .\PopulateDrills.sql
+:r .\PopulateLogEntry.sql
