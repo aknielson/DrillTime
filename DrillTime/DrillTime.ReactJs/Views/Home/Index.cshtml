@@ -1,0 +1,39 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.1.1.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+</head>
+<body>
+    <div class="panel panel-primary text-center">
+        <div class="panel-heading" style="font-size:x-large">
+            Drill List
+        </div>
+        <div class="panel-body">
+            <!-- Begin Drill List-->
+            <div class="panel-body">
+                <div id="drillTable">
+                   
+                </div>
+            </div>
+
+            <!-- End Drill List-->
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react-dom.js"></script>
+    <script src="@Url.Content("~/Scripts/DrillList.jsx")"></script>
+</body>
+</html>
