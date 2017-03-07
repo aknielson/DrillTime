@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrillTime.WebApiNoEf", "Dri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrillTime.WebApiNoOwEf", "DrillTime.WebApiNoOwEf\DrillTime.WebApiNoOwEf.csproj", "{EE927EEA-E7FC-425C-8B72-48BE104883DE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallWebApis", "CallWebApis\CallWebApis.csproj", "{44BF893A-7741-4CF9-AA3E-ECA6E1EF1440}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -68,6 +70,10 @@ Global
 		{EE927EEA-E7FC-425C-8B72-48BE104883DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE927EEA-E7FC-425C-8B72-48BE104883DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE927EEA-E7FC-425C-8B72-48BE104883DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44BF893A-7741-4CF9-AA3E-ECA6E1EF1440}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44BF893A-7741-4CF9-AA3E-ECA6E1EF1440}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44BF893A-7741-4CF9-AA3E-ECA6E1EF1440}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44BF893A-7741-4CF9-AA3E-ECA6E1EF1440}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -84,6 +84,8 @@
     <Content Include="css\bootstrap-theme.min.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\toastr.css" />
+    <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="images\logo.png" />
     <Content Include="js\angular-mocks.js" />
@@ -92,6 +94,9 @@
     <Content Include="js\angular.js" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\jquery-3.1.1.js" />
+    <Content Include="js\toastr.js" />
+    <Content Include="js\ui-bootstrap-tpls-0.11.0.js" />
+    <Content Include="js\ui-utils.js" />
     <Content Include="packages.config" />
     <Content Include="css\bootstrap-theme.css.map" />
     <Content Include="css\bootstrap-theme.min.css.map" />
@@ -133,7 +138,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>3635</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:3635/</IISUrl>
+          <IISUrl>http://localhost:3666/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

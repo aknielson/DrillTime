@@ -27,6 +27,9 @@ namespace DrillTime.WebApiNoOwEf.Controllers
         [ResponseType(typeof(Drill))]
         public IHttpActionResult GetDrill(int id)
         {
+            if (id == 0)
+                return Ok(new Drill {Id = 0});
+
             Drill drill = db.Drills.Find(id);
             if (drill == null)
             {
@@ -37,7 +40,7 @@ namespace DrillTime.WebApiNoOwEf.Controllers
         }
 
         // PUT: api/Drills/5
-        [ResponseType(typeof(void))]
+        [ResponseType(typeof(IHttpActionResult))]
         public IHttpActionResult PutDrill(int id, Drill drill)
         {
             if (!ModelState.IsValid)
@@ -72,18 +75,24 @@ namespace DrillTime.WebApiNoOwEf.Controllers
         }
 
         // POST: api/Drills
-        [ResponseType(typeof(Drill))]
+        [ResponseType(typeof(IHttpActionResult))]
         public IHttpActionResult PostDrill(Drill drill)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
+            if (drill.Id == 0)
+            {
+                db.Drills.Add(drill);
+                db.SaveChanges();
 
-            db.Drills.Add(drill);
-            db.SaveChanges();
-
-            return CreatedAtRoute("DefaultApi", new { id = drill.Id }, drill);
+                return CreatedAtRoute("DefaultApi", new {id = drill.Id}, drill);
+            }
+            else
+            {
+                return PutDrill(drill.Id, drill);
+            }
         }
 
         // DELETE: api/Drills/5

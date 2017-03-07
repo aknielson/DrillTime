@@ -1,11 +1,11 @@
-﻿<form class="form-horizontal" name="drillForm">
+<form class="form-horizontal" name="productForm">
     <fieldset>
-        <legend>Drill Search Tags</legend>
+        <legend>Product Search Tags</legend>
         <div class="form-group">
             <label class="col-md-2 control-label" for="inputSearchTags">Search Tags</label>
             <div class="col-md-8">
                 <input class="form-control" id="inputSearchTags" type="text"
-                       placeholder="Drill search keywords separated by commas"
+                       placeholder="Product search keywords separated by commas"
                        ng-model="vm.newTags" />
             </div>
             <div class="col-md-1">
@@ -18,7 +18,7 @@
             </div>
         </div>
         <div class="row col-md-8 col-md-offset-2">
-            <span ng-repeat="tag in vm.TagList | orderBy">
+            <span ng-repeat="tag in vm.product.tags | orderBy">
                 <button class="btn btn-default"
                         style="font-size:smaller;margin-bottom:12px"
                         ng-click="vm.removeTag($index)">
